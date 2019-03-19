@@ -6,7 +6,7 @@ const mapDispatchToProps = dispatch => ({
 	thumbUpComment: (id) => dispatch(thumbUpComment(id)),
 	thumbDownComment: (id) => dispatch(thumbDownComment(id)),
 	editComment: (id, text) => dispatch(editComment(id,text)),
-	removeComment: (id, text) => dispatch(editComment(id))
+	removeComment: (id) => dispatch(removeComment(id))
 });
 
 export default connect(null, mapDispatchToProps)(Comment);
