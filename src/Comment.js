@@ -53,7 +53,7 @@ class Comment extends React.Component {
           <button className="btn-vote btn-up" onClick={() => this.props.thumbUpComment(this.props.id)}><FontAwesomeIcon icon={faThumbsUp} /></button> 
           <button className="btn-vote btn-down" onClick={() => this.props.thumbDownComment(this.props.id)}><FontAwesomeIcon icon={faThumbsDown} /></button>
         </div>
-        <button className="btn-remove" onClick={() => this.handleRemove()}>X</button>
+        <button className="btn-remove" onClick={() => this.handleRemove()}>x</button>
       </li>
     );
   }
